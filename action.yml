@@ -1,0 +1,9 @@
+name: "cloudfront"
+description: "Github action to create invalidation of Cloudfront."
+runs:
+  using: docker
+  image: Dockerfile
+inputs:
+  SOURCE_PATH:
+    description: "Path to invalidate Cloudfront distribution"
+    required: false
